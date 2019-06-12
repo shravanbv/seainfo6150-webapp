@@ -5,7 +5,8 @@ const Article= ({ article }) => {
   return (
     <div className="Article">
         <h3>{article.title}</h3>
-        <p><em>By: {article.author}</em><br />{article.pubDate}</p>
+        <p><em>By: {article.author}</em></p>
+        <p>{article.pubDate}</p>
         <p>{article.shortText}</p>
     </div>
   );
