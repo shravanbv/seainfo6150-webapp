@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 
 const Article= ({ article }) => (
     <article className="Article">
-        <h3>{article.title}</h3>
+        <header>
+            <h3>{article.title}</h3>
+        </header>  
+
+        <footer>
         <p><em>By: {article.author}</em><br/>{article.pubDate}</p>
         <p>{article.shortText}</p>
+        </footer>
     </article>
   );
 
