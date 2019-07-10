@@ -12,6 +12,7 @@
 
 .articleListItem{
     border: 2px solid red;
+    border-radius: 15px;
     position: relative;
     height: 150px;
     padding-left: 5px;
