@@ -5,10 +5,14 @@ import ArticleImage from './ArticleImage';
 
 const ArticleListItem = ({ title, author, pubData, shortTest, url }) => (
     <article className = {styles.articleListItem}>
+        
+        
+        
         <ArticleImage title={title} url={url} />
-        <p>{shortTest}</p>
+
+        <p className={styles.articleText}>{shortTest}</p>
         <footer className = {styles.article_Date_Author}>
-            <p><city><i>By: {author}</i> </city><br /> <strong><time dateTime = {pubData}>{pubData}</time></strong></p>    
+            <p><i>By: {author}</i> <br /> <strong><time dateTime = {pubData}>{pubData}</time></strong></p>    
         </footer>   
     </article>
 );
